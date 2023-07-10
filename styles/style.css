@@ -1,0 +1,252 @@
+/* GLOBAL STYLES */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* COMMON STYLES */
+body {
+	font-family: Work Sans;
+}
+.btn {
+	padding: 17px 23px;
+	border: none;
+	border-radius: 5px;
+	font-size: 20px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+.btn-primary {
+	background-color: #f15b22;
+	color: #fff;
+}
+.btn-secondary {
+	padding: 20px 36px;
+	background-color: #fff;
+	font-size: 20px;
+	color: #f15b22;
+	text-align: center;
+	transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+	background-color: #e34f15;
+}
+.btn-secondary:hover {
+	background-color: #fba482;
+	color: white;
+}
+
+/* HEADER SECTION STYLES */
+.header {
+	background-image: url("../images/banner/banner1.png");
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 230px;
+	display: flex;
+	justify-content: flex-end;
+}
+.banner-content {
+	max-width: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+}
+.banner-title {
+	color: #151414;
+	text-align: right;
+	font-size: 65px;
+	font-weight: 700;
+	margin-bottom: 24px;
+}
+.banner-description {
+	color: #444343;
+	text-align: right;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	margin-bottom: 30px;
+}
+
+/* MAIN SECTION STYLES */
+main {
+	padding: 0 230px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.main-title {
+	color: #151414;
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 24px;
+}
+
+/* MAIN: MY FAILURE SECTION STYLES */
+.my-failure {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 140px 0;
+}
+.my-failure-img-container {
+	width: 50%;
+}
+.my-failure-img {
+	width: 80%;
+}
+.my-failure-content {
+	width: 50%;
+	width: 450px;
+	padding: 20px;
+}
+.my-failure-content > p {
+	color: #444343;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	margin-bottom: 16px;
+}
+.my-failure-content > ul li {
+	color: #444343;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	list-style: none;
+}
+.my-failure-content > ul li i {
+	margin-right: 10px;
+	color: #16d887;
+}
+
+/* MAIN: MY PLANS SECTION STYLES */
+.my-plans {
+	margin-bottom: 160px;
+}
+.my-plans-title {
+	text-align: center;
+	margin-bottom: 70px;
+}
+.my-plans-items-container {
+	display: flex;
+	justify-content: space-around;
+}
+.my-plans-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.my-plans-item img {
+	width: 100px;
+	margin-bottom: 18px;
+}
+.my-plans-item h3 {
+	color: #151414;
+	font-size: 30px;
+	font-weight: 700;
+}
+.my-plans-item p {
+	color: #737272;
+	font-size: 25px;
+	font-weight: 500;
+}
+
+/* MAIN: MY CONTACT STYLES */
+.my-contact {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.contact-banner {
+	background: url("../images/watch.png"), url("../images/gradient3.png");
+	background-blend-mode: overlay;
+	background-repeat: repeat;
+	width: 79%;
+	height: 300px;
+	padding: 60px;
+	margin: 0px auto 160px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	border-radius: 8px;
+}
+.contact-banner h2 {
+	color: #fff;
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 24px;
+}
+
+/* FOOTER SECTION STYLES */
+footer {
+	background: #151414;
+	padding: 130px 230px;
+	display: flex;
+	justify-content: space-between;
+}
+.footer-column {
+	width: 50%;
+}
+.footer-future {
+	padding: 0 250px 0 0;
+}
+.footer-future h2 {
+	color: #f8f8f8;
+	font-size: 45px;
+	font-weight: 700;
+	margin-bottom: 16px;
+}
+.footer-future p {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	margin-bottom: 14px;
+}
+.footer-future .footer-info {
+	margin-bottom: 24px;
+}
+.social-links {
+	margin-top: 32px;
+}
+.social-links img {
+	width: 46px;
+	height: 46px;
+	margin-right: 14px;
+}
+
+.footer-subscribe {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.footer-subscribe h3 {
+	color: #fff;
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 31px;
+}
+.footer-contact {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	align-items: flex-start;
+}
+.footer-contact input[type="email"] {
+	border-radius: 8px;
+	border: 1px solid #fff;
+	color: #f3f3f3;
+	font-size: 18px;
+	font-weight: 400;
+	padding: 22px 160px 22px 21px;
+	background-color: transparent;
+}
+::placeholder {
+	color: #f3f3f3;
+}
